@@ -348,6 +348,13 @@ the `clear_line` method works pretty much like the `clear_screen` method, but in
 | 2 / "full"     | "\u001b[2K" | *mode*  | Completely wipes out the line                              |
 
 
+
+
+---
+
+
+# Let's make something
+
 With the skills we've acquired so far, let's create a simple animated Pac-Man character
 
 ```ruby
@@ -367,3 +374,5 @@ loop do
 
 end
 ```
+
+This should produce a small animation. You should be able to stop it with ctrl+c.
