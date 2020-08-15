@@ -1,8 +1,8 @@
 # Rubterm
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubterm`. To experiment with that code, run `bin/console` for an interactive prompt.
+I couldn't find anything complete yet well document so I made it myself.
 
-TODO: Delete this and the text above, and describe your gem
+Rubterm is a simple Ruby gem to control your terminal trough ANSI escape codes.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You may check out [the docs](./DOCS.md)
 
 ## Development
 
@@ -32,5 +32,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rubterm.
+Bug reports and pull requests are welcome on GitHub at https://github.com/DumbMahreeo/rubterm.
 
