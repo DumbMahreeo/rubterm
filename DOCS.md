@@ -194,7 +194,7 @@ puts "#{Rubterm.deco("striketrough")}this is some striketrough text"
 and
 
 ```ruby
-text = Rubterm.deco("green") + "this is some striketrough text"
+text = Rubterm.deco("striketrough") + "this is some striketrough text"
 puts text
 ```
 
