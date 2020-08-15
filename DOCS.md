@@ -346,3 +346,24 @@ the `clear_line` method works pretty much like the `clear_screen` method, but in
 | 0 / "to_end"   | "\u001b[0K" | *mode*  | Clears the screen from the cursor to the end of the line   |
 | 1 / "to_start" | "\u001b[1K" | *mode*  | Clears the screen from the cursor to the start of the line |
 | 2 / "full"     | "\u001b[2K" | *mode*  | Completely wipes out the line                              |
+
+
+With the skills we've acquired so far, let's create a simple animated Pac-Man character
+
+```ruby
+require 'rubterm'
+
+loop do
+
+  puts "#{Rubterm.bold_color "yellow"}C#{Rubterm.reset}"
+  Rubterm.move("up")
+
+  sleep 0.4
+
+  puts "#{Rubterm.bold_color "yellow"}c#{Rubterm.reset}"
+  Rubterm.move("up")
+
+  sleep 0.4
+
+end
+```
