@@ -1,6 +1,6 @@
 # rubterm [![Gem Version](https://img.shields.io/gem/v/rubterm?label=Version)](https://img.shields.io/gem/v/rubterm?label=Version) [![License](https://img.shields.io/badge/License-LGPL2-green)](https://img.shields.io/badge/License-LGPL2-green)
 
-I couldn't find anything complete yet well document so I made it myself.
+I couldn't find anything complete yet well documented so I made it myself.
 
 Rubterm is a simple Ruby gem to control your terminal trough ANSI escape codes.
 
