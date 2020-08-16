@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/rubterm.svg)](https://badge.fury.io/rb/rubterm)
+
 # Rubterm
 
 I couldn't find anything complete yet well document so I made it myself.
