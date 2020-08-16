@@ -14,8 +14,6 @@
 #**************************************
 
 
-require "./rubterm/version.rb"
-
 module Rubterm
 
   def self.reset()

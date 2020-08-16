@@ -1,6 +1,6 @@
 # Preamble
 
-This file explains how to do the following things using **rubterm**
+This file explains how to do the following things using the "normal" variation of **rubterm**
 
 - How to manipulate text color using
 
