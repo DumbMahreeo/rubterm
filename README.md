@@ -24,9 +24,9 @@ Or install it yourself as:
 
 **rubterm** comes in two versions:
 
-* The standard one, `rubterm`, which uses the `Rubterm` object. You can find the docs for this version [here](./DOCSnormal.md).
+* The "standard" one, `rubterm`, which uses the `Rubterm` object. You can find the docs for this version [here](./DOCSnormal.md).
 
-* The string one, `rubterm_string`, which extends the `String` class and introduces two new objects, `Rcursor` and `Rscreen`. You can find the docs for this version [here](./DOCSstring.md)
+* The "string" one, `rubterm_string`, which extends the `String` class and introduces two new objects, `Rcursor` and `Rscreen`. You can find the docs for this version [here](./DOCSstring.md)
 
 ## Development
 
