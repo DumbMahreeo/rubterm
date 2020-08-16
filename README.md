@@ -1,4 +1,4 @@
-# Rubterm [![Gem Version](https://img.shields.io/gem/v/rubterm?label=Version)](https://img.shields.io/gem/v/rubterm?label=Version) [![License](https://img.shields.io/badge/License-LGPL2-green)](https://img.shields.io/badge/License-LGPL2-green)
+# rubterm [![Gem Version](https://img.shields.io/gem/v/rubterm?label=Version)](https://img.shields.io/gem/v/rubterm?label=Version) [![License](https://img.shields.io/badge/License-LGPL2-green)](https://img.shields.io/badge/License-LGPL2-green)
 
 I couldn't find anything complete yet well document so I made it myself.
 
