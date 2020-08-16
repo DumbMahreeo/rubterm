@@ -12,7 +12,8 @@ Gem::Specification.new do |spec|
   spec.files         = [
     "LICENSE",
     "README.md",
-    "DOCS.md",
+    "DOCSnormal.md",
+    "DOCSstring.md",
     "Rakefile",
     "Gemfile",
     "rubterm.gemspec",
