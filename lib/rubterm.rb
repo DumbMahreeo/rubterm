@@ -30,43 +30,41 @@ module Rubterm
 
   end
 
-  def self.deco(type="underline")
-
-    type.downcase! if type.class == String
+  def self.deco(type=:underline)
 
     case type
 
-    when "reset"
+    when :reset
       return "\u001b[0m"
 
-    when "bold"
+    when :bold
       return "\u001b[1m"
 
-    when "faint"
+    when :faint
       return "\u001b[2m"
 
-    when "italic"
+    when :italic
       return "\u001b[3m"
 
-    when "underline"
+    when :underline
       return "\u001b[4m"
 
-    when "double_underline"
+    when :double_underline
       return "\u001b[21m"
 
-    when "slow_blink"
+    when :slow_blink
       return "\u001b[5m"
 
-    when "fast_blink"
+    when :fast_blink
       return "\u001b[6m"
 
-    when "reversed"
+    when :reversed
       return "\u001b[7m"
 
-    when "erase"
+    when :erase
       return "\u001b[8m"
 
-    when "striketrough"
+    when :striketrough
       return "\u001b[9m"
 
     else
@@ -76,35 +74,35 @@ module Rubterm
 
   end
 
-  def self.color(color="reset")
+  def self.color(color=:reset)
 
-    case color.downcase
+    case color
 
-    when "black"
+    when :black
       return "\u001b[30m"
 
-    when "red"
+    when :red
       return "\u001b[31m"
 
-    when "green"
+    when :green
       return "\u001b[32m"
 
-    when "yellow"
+    when :yellow
       return "\u001b[33m"
 
-    when "blue"
+    when :blue
       return "\u001b[34m"
 
-    when "magenta"
+    when :magenta
       return "\u001b[35m"
 
-    when "cyan"
+    when :cyan
       return "\u001b[36m"
 
-    when "white"
+    when :white
       return "\u001b[37m"
 
-    when "reset"
+    when :reset
       return "\u001b[0m"
 
     else
@@ -114,35 +112,35 @@ module Rubterm
 
   end
 
-  def self.bold_color(color="reset")
+  def self.bold_color(color=:reset)
 
-    case color.downcase
+    case color
 
-    when "black"
+    when :black
       return "\u001b[30;1m"
 
-    when "red"
+    when :red
       return "\u001b[31;1m"
 
-    when "green"
+    when :green
       return "\u001b[32;1m"
 
-    when "yellow"
+    when :yellow
       return "\u001b[33;1m"
 
-    when "blue"
+    when :blue
       return "\u001b[34;1m"
 
-    when "magenta"
+    when :magenta
       return "\u001b[35;1m"
 
-    when "cyan"
+    when :cyan
       return "\u001b[36;1m"
 
-    when "white"
+    when :white
       return "\u001b[37;1m"
 
-    when "reset"
+    when :reset
       return "\u001b[0m"
 
     else
@@ -152,35 +150,35 @@ module Rubterm
 
   end
 
-  def self.background(color="reset")
+  def self.background(color=:reset)
 
-    case color.downcase
+    case color
 
-    when "black"
+    when :black
       return "\u001b[40m"
 
-    when "red"
+    when :red
       return "\u001b[41m"
 
-    when "green"
+    when :green
       return "\u001b[42m"
 
-    when "yellow"
+    when :yellow
       return "\u001b[43m"
 
-    when "blue"
+    when :blue
       return "\u001b[44m"
 
-    when "magenta"
+    when :magenta
       return "\u001b[45m"
 
-    when "cyan"
+    when :cyan
       return "\u001b[46m"
 
-    when "white"
+    when :white
       return "\u001b[47m"
 
-    when "reset"
+    when :reset
       return "\u001b[0m"
 
     else
@@ -190,35 +188,35 @@ module Rubterm
 
   end
 
-  def self.bold_background(color="reset")
+  def self.bold_background(color=:reset)
 
-    case color.downcase
+    case color
 
-    when "black"
+    when :black
       return "\u001b[40;1m"
 
-    when "red"
+    when :red
       return "\u001b[41;1m"
 
-    when "green"
+    when :green
       return "\u001b[42;1m"
 
-    when "yellow"
+    when :yellow
       return "\u001b[43;1m"
 
-    when "blue"
+    when :blue
       return "\u001b[44;1m"
 
-    when "magenta"
+    when :magenta
       return "\u001b[45;1m"
 
-    when "cyan"
+    when :cyan
       return "\u001b[46;1m"
 
-    when "white"
+    when :white
       return "\u001b[47;1m"
 
-    when "reset"
+    when :reset
       return "\u001b[0m"
 
     else
@@ -228,17 +226,15 @@ module Rubterm
 
   end
 
-  def self.position(mode="load")
-    
-    mode.downcase! if mode.class == String
+  def self.position(mode=:load)
 
     case mode
 
-    when "load"
+    when :load
       print "\u001b[u"
       return mode
 
-    when "save"
+    when :save
       print "\u001b[s"
       return mode
 
@@ -252,29 +248,27 @@ module Rubterm
   def self.goto(x=0, y=0)
 
     print "\u001b[#{y};#{x}H"
-    return {"x"=>x, "y"=>y}
+    return {:x=>x, :y=>y}
 
   end
 
   def self.move(dir, pos=1)
 
-    dir.downcase!
-
     case dir
 
-    when "n", "up"
+    when :n, :up
       print "\u001b[#{pos}A"
       return dir
 
-    when "s", "down"
+    when :s, :down
       print "\u001b[#{pos}B"
       return dir
 
-    when "e", "right"
+    when :e, :right
       print "\u001b[#{pos}C"
       return dir
 
-    when "w", "left"
+    when :w, :left
       print "\u001b[#{pos}D"
       return dir
 
@@ -287,19 +281,17 @@ module Rubterm
 
   def self.clear_screen(mode=2)
 
-    mode.downcase! if mode.class == String
-
     case mode
 
-    when 0, "to_end"
+    when 0, :to_end
       print "\u001b[0J"
       return mode
 
-    when 1, "to_start"
+    when 1, :to_start
       print "\u001b[1J"
       return mode
 
-    when 2, "full"
+    when 2, :full
       print "\u001b[2J"
       return mode
 
@@ -312,19 +304,17 @@ module Rubterm
 
   def self.clear_line(mode=2)
 
-    mode.downcase! if mode.class == String
-
     case mode
 
-    when 0, "to_end"
+    when 0, :to_end
       print "\u001b[0K"
       return mode
 
-    when 1, "to_start"
+    when 1, :to_start
       print "\u001b[1K"
       return mode
 
-    when 2, "full"
+    when 2, :full
       print "\u001b[2K"
       return mode
 
