@@ -315,7 +315,7 @@ Rubterm.position(:load) # Coming back to my saved position
 
 ### Clear the whole screen
 
-The `clear_screen` method lets you clear the whole screen and takes one optional argument, the mode. This method accepts both integer and symbol arguments. If no arguments are given, defaults to 2/"full"
+The `clear_screen` method lets you clear the whole screen and takes one optional argument, the mode. This method accepts both integer and symbol arguments. If no arguments are given, defaults to 2/:full
 
 | Argument      | Prints      | Returns | Effect                                                       |
 | ------------- | ----------- | ------- | ------------------------------------------------------------ |
