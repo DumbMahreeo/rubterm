@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "rubterm"
-  spec.version       = "0.1.2.pre.2"
+  spec.version       = "0.1.2"
   spec.authors       = ["Massimiliano Noviello"]
   spec.email         = ["massi.noviello@gmail.com"]
 
