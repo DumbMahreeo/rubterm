@@ -9,6 +9,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/DumbMahreeo/rubterm"
   spec.license       = "LGPL-2.1"
 
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
+
   spec.files         = [
     "LICENSE",
     "README.md",
