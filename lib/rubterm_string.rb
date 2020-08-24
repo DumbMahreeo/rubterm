@@ -456,37 +456,6 @@ class String
   end
 
   ####### end bold backgrounds
-  
-  ####### begin draw method
-  def draw()
-        
-    counter = 0    
-    print "\u001b[s"    
-      
-    self.split("").each do |x|    
-      
-      x = " " if x == "\n" or x == "\r"    
-      
-      print x if counter == 0    
-      
-      
-      if counter != 0    
-      
-        print "\u001b[#{counter}C"    
-      
-        print x    
-      
-      end    
-      
-      print "\u001b[u"    
-      
-      counter+=1    
-      
-    end    
-      
-    print "\u001b[u"    
-  end  
-  ####### end draw method
 
 end
 
